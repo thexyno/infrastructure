@@ -51,11 +51,5 @@
         picard = nixosSystem "x86_64-linux" [ ./nixos-hosts/picard/default.nix ];
         ds9 = nixosSystem "x86_64-linux" [ ./nixos-hosts/ds9/default.nix ];
       };
-    } // utils.lib.eachDefaultSystem (system:
-    let pkgs = nixpkgs.legacyPackages.${system}; in
-    {
-      devShell = pkgs.mkShell {
-        # buildInputs = with pkgs; [ lefthook nixpkgs-fmt inputs.agenix.packages.${system}.agenix ];
-      };
-    });
+    };
 }

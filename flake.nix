@@ -12,6 +12,7 @@
     , ...
     }:
     let
+      lib = nixpkgs.lib;
       rev = if (lib.hasAttrByPath [ "rev" ] self.sourceInfo) then self.sourceInfo.rev else "Dirty Build";
 
       overlays = [

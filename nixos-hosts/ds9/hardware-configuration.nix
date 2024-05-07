@@ -13,6 +13,9 @@
   boot.kernelModules = [ ];
   boot.extraModulePackages = [ ];
 
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.canTouchEfiVariables = true;
+
   fileSystems."/" =
     { device = "/dev/disk/by-uuid/48ae4da1-d02a-45db-9c08-d99dbfd0d672";
       fsType = "xfs";

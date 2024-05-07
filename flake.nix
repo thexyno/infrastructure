@@ -31,6 +31,9 @@
             specialArgs = { inherit lib inputs; };
             modules = [
               ./nixos-common.nix
+              {
+                networking.hostName = hostName;
+              }
             ] ++ extraModules;
           };
 

@@ -24,12 +24,12 @@
     defaultLocale = "en_DK.UTF-8";
   };
 
-  system.configurationRevision = with inputs; mkIf (self ? rev) self.rev;
+  system.configurationRevision = with inputs; lib.mkIf (self ? rev) self.rev;
   system.stateVersion = "23.11";
 
   boot = {
     loader = {
-      efi.canTouchEfiVariables = mkDefault true;
+      efi.canTouchEfiVariables = lib.mkDefault true;
       systemd-boot.configurationLimit = 5;
     };
   };

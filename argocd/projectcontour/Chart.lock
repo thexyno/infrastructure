@@ -1,0 +1,6 @@
+dependencies:
+- name: contour
+  repository: oci://registry-1.docker.io/bitnamicharts
+  version: 17.0.12
+digest: sha256:d313f739d03d2eafab751e0e4a7ac6a0c32bdbac861b4d8fe2ee79f4bec51b22
+generated: "2024-05-11T16:26:00.022251+02:00"

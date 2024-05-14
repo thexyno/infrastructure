@@ -1,0 +1,9 @@
+dependencies:
+- name: cert-manager
+  repository: https://charts.jetstack.io
+  version: v1.14.5
+- name: cert-manager-webhook-desec-http
+  repository: oci://ghcr.io/irreleph4nt/charts
+  version: 1.0.1
+digest: sha256:067d5b9bd6aac15900c8ec04a24ebfce59c13e3f19dbef265830183c3e9406d1
+generated: "2024-05-14T16:32:43.437833+02:00"

@@ -1,0 +1,13 @@
+apiVersion: v2
+name: cert-manager
+type: application
+
+version: 0.1.0
+
+dependencies:
+  - name: cert-manager
+    version: 'v1.14.5'
+    repository: 'https://charts.jetstack.io'
+  - name: cert-manager-webhook-desec-http
+    version: '1.0.1'
+    repository: 'oci://ghcr.io/irreleph4nt/charts'

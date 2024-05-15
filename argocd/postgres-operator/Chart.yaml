@@ -1,0 +1,10 @@
+apiVersion: v2
+name: postgres-operator
+type: application
+
+version: 0.1.0
+
+dependencies:
+  - name: pgo
+    version: '5.5.1'
+    repository: 'oci://registry.developers.crunchydata.com/crunchydata'

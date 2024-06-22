@@ -1,0 +1,10 @@
+[tools]
+node = "20"
+python = "3.12"
+"pipx:pyinfra" = "latest"
+argocd = "latest"
+nfpm = "latest"
+kubectl = "latest"
+helm = "latest"
+"go:github.com/grafana/jsonnet-language-server" = "latest"
+"go:github.com/bitnami-labs/sealed-secrets/cmd/kubeseal" = "latest"
